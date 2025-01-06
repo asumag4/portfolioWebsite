@@ -1,0 +1,63 @@
+// Import Bootstrap5 Variables
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+// Styling navbar 
+.navbar {
+    background: rgba($secondary, 0.15);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+// Intro Typewriter Animation 
+.typewriter {
+    margin: 2.5rem;
+}
+
+.typewriter-text {
+    display: inline-block; /* Ensures the text takes only as much space as needed */
+    letter-spacing: 10px;
+    font-family: monospace;
+    border-right: 5px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+        typing 2s steps(11, end),
+        cursor .4s step-end infinite alternate;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+
+@keyframes cursor {
+    50% { border-color: transparent; }
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+// Profile Picture 
+.profilePicture {
+    box-shadow: inset;
+    // Sizing
+    width: 400px;
+    height: auto;
+    // Circling
+    border-radius: 25%;
+    // Post-card effect
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.profilePicture:hover {
+    opacity: 0.5;
+}
+
+// Intro Icon Links
+.iconLinks {
+    font-size: 1.2rem;
+}
+
+// import bootstrap

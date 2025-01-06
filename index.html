@@ -1,0 +1,425 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arthur Sumague</title>
+    <!-- Importing Our Modded Bootstrap Rules -->
+    <link href="/css/main.min.css" rel="stylesheet">
+    <style>
+        section {
+            padding: 60px 0;
+        }
+    </style>
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- FontAwesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top">
+        <div class="container-xxl mt-2">
+            <a href="#intro" class="navbar-brand">
+                <span class="fw-bold text-secondary">
+                    <i class="bi bi-code-slash"></i>
+                    Arthur Sumague 
+                </span>
+            </a>
+            <!-- Toggle Button for mobile navbar -->
+            <button 
+                class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse"
+                data-bs-target="#main-nav"
+                aria-controls="main-nav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                > 
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- navbar links -->
+            <div 
+                class="collapse navbar-collapse justify-content-end align-center"
+                id="main-nav">
+                <ul class="navbar-nav">
+                    <li  class="nav-item">
+                        <a class="nav-link" href="#intro">About Me</a>
+                    </li>
+                    <li  class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li  class="nav-item ms-2 d-none d-md-inline">
+                        <a class="btn btn-secondary" href="#contact">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Intro -->
+    <section id="intro">
+        <div class="container-lg">
+
+            <!-- Hi There! -->
+            <div class="typewriter text-center">
+                <h3 class="typewriter-text">Hi There...<i class="bi bi-laptop"></i><i class="fa-solid fa-flask"></i></h3>
+            </div>
+
+            <!-- About Me -->
+            <div class="aboutMe">
+                <div class="row justify-content-center align-items-center mb-4">
+                    <!-- Welcome Statement -->
+                    <div class="col-md-5 text-center text-md-start">
+                        <h1>
+                            <div class="display-2">Arthur Sumague</div>
+                            <div class="display-6 text-muted">Welcome to my page!</div>
+                        </h1>
+                        <div class="iconLinks" id="links-container">
+                            <span><a href="https://www.linkedin.com/in/arthur-sumague-7b1930207/"><i class="bi bi-linkedin"></i></a></span>
+                            <span><a href="https://github.com/asumag4"><i class="bi bi-github"></i></a></span>
+                        </div>
+                    </div>
+                    <!-- Image -->
+                    <div class="col-md-5 text-center d-none d-md-block">
+                        <span class="tt" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Arthur">
+                            <img class="profilePicture" src="/assets/cropped-pfp.jpg" alt="portrait" />
+                        </span>    
+                    </div>                
+                </div>
+                <div class="container">
+                    <ul class="nav nav-tabs" 
+                        id="summaryTabs" 
+                        role="tablist">
+                        <li class="nav-item" 
+                            role="presentation">
+                          <button class="nav-link active" 
+                            id="intro-tab" 
+                            data-bs-toggle="tab" 
+                            data-bs-target="#intro-tab-content" 
+                            type="button" 
+                            role="tab" 
+                            aria-controls="intro" 
+                            aria-selected="true">Intro</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" 
+                            id="hobby-tab" 
+                            data-bs-toggle="tab" 
+                            data-bs-target="#hobby-tab-content" 
+                            type="button" 
+                            role="tab" 
+                            aria-controls="hobby" 
+                            aria-selected="false">Hobbyist Projects</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" 
+                            id="academic-tab" 
+                            data-bs-toggle="tab" 
+                            data-bs-target="#academic-tab-content" 
+                            type="button" 
+                            role="tab" 
+                            aria-controls="academic" 
+                            aria-selected="false">Academic Projects</button>
+                        </li>
+                      </ul>
+                      <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" 
+                            id="intro-tab-content" 
+                            role="tabpanel" 
+                            aria-labelledby="intro-tab">I am currently a Masters of Data Science and Analytics student at the University of Calgary. I completed a Bachelor's of Science in Biochemistry prior to my transition to tech. Programming was a side hobby, which I later decided to pursue as my professional career. I like to program, it the best-of-both-worlds for me because the creative outlet through web- & software-development, and the problem solving and analytical approach to data-science. Please feel free to contact me, I am open to collaborating on projects!
+                        </div>
+                        <div class="tab-pane fade" 
+                            id="hobby-tab-content" 
+                            role="tabpanel" 
+                            aria-labelledby="hobby-tab">On my spare-time, I like to work on software-development projects. For now, I am focused on mastering web-development. I also made a copy of the board-game <strong><a href="https://github.com/asumag4/nineMensMorris">Nine Men's Morris</a></strong> in python using the library <em>pygame</em>. I also have web-page projects I've done through the <strong><a href="https://github.com/asumag4/freeCodeCampProjects">freeCodeCamp curriculum</a></strong>.
+                        </div>
+                        <div class="tab-pane fade" 
+                            id="academic-tab-content" 
+                            role="tabpanel" 
+                            aria-labelledby="academic-tab">In my undergrad, I worked primarily by the bench-side (hands-on). I used to purify proteins from E. <em>coli</em> cells. Nowadays in school, I work on data-analysis in my graduate studies. In my github, I've created data-analyst projects to display my skills. I did a project on <strong><a href="https://github.com/asumag4/analysisOfJobsInData">Data Analyst Job Salaries</a></strong> using python with pandas and plotly. I used R and it's libraries to create a predictive model on <strong><a href="https://github.com/asumag4/student-performance-analysis">Student Performance</a></strong> and <strong><a href="https://github.com/asumag4/redWineQualityAnalysis">Red Wine Quality</a></strong>.</div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    
+    <section id="skills">
+        <div class="container-lg">
+            <h2>Skills</h2>
+        <!-- Accordion -->
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Data Science
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+
+                    <!-- Data Science Content -->
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="list-group" id="dataScience-list-tab" role="tablist">
+                            <a class="list-group-item list-group-item-action active" id="list-python" data-bs-toggle="list" href="#list-python-content" role="tab" aria-controls="list-python-content">Python</a>
+                            <a class="list-group-item list-group-item-action" id="list-r" data-bs-toggle="list" href="#list-r-content" role="tab" aria-controls="list-r-content">R</a>
+                            <a class="list-group-item list-group-item-action" id="list-sql" data-bs-toggle="list" href="#list-sql-content" role="tab" aria-controls="list-sql-content">SQL</a>
+                            <a class="list-group-item list-group-item-action" id="list-mongoDB" data-bs-toggle="list" href="#list-mongoDB-content" role="tab" aria-controls="list-mongoDB-content">MongoDB</a>
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="tab-content" id="nav-tabContent">
+                            <!-- Python List Content -->
+                            <div class="tab-pane fade show active" id="list-python-content" role="tabpanel" aria-labelledby="list-python">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 66%;" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100">Intermediate</div>
+                                </div>
+                                <div class="text-center mt-2">
+                                    <p><em>University-Educated</em></p>
+                                </div>
+                                <p>Course-work and projects focused on deriving insights from data via data-wrangling, data-visualization, and data-summaries (utilizing summarizing functions)</p> 
+                                <ul class="list-group list-group-horizontal flex-fill">
+                                    <li class="list-group-item">numpy</li>
+                                    <li class="list-group-item">pandas</li>
+                                    <li class="list-group-item">matplotlib</li>
+                                    <li class="list-group-item">seaborn</li>
+                                    <li class="list-group-item">plotly</li>
+                                    <li class="list-group-item">scikit-learn</li>
+                                    <li class="list-group-item">jupyter-notebooks</li>
+                                </ul>
+                            </div>
+                            <!-- R List Content -->
+                            <div class="tab-pane fade" id="list-r-content" role="tabpanel" aria-labelledby="list-r">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 66%;" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100">Intermediate</div>
+                                </div>
+                                <div class="text-center mt-2">
+                                    <p><em>University-Educated</em></p>
+                                </div>
+                                <p>Extensive knowledge on probability distributions and conducting statistical tests during my undergrad. Graduate studies have heavily focused on <strong>multi-linear regression</strong> and <strong>logistic regression modelling</strong>.</p>
+                                <ul class="list-group list-group-horizontal flex-fill">
+                                    <li class="list-group-item">MASS</li>
+                                    <li class="list-group-item">olsrr</li>
+                                    <li class="list-group-item">ggplot2</li>
+                                    <li class="list-group-item">GGAlly</li>
+                                    <li class="list-group-item">plotly</li>
+                                    <li class="list-group-item">lmtest</li>
+                                    <li class="list-group-item">r-markdown</li>
+                                </ul>
+                            </div>
+                            <!-- SQL List Content -->
+                            <div class="tab-pane fade" id="list-sql-content" role="tabpanel" aria-labelledby="list-sql">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Beginner-Intermediate</div>
+                                </div>
+                                <div class="text-center mt-2">
+                                    <p><em>University-Educated</em></p>
+                                </div>
+                                <p>Experience through course-work and projects to utilize SQL to gain data-insights from databases. I have experience in locally hosting a MySQL server, self-joins, and inter-database joins. I have experience querying from MySQL WorkBench and using python libraries to; [1] clean and filter databases prior to database insertion and [2] query directly to a database(s).</p>
+                                <ul class="list-group list-group-horizontal flex-fill">
+                                    <li class="list-group-item">MySQL</li>
+                                    <li class="list-group-item">MariaDB</li>
+                                    <li class="list-group-item">Python - MySQL Connector</li>
+                                    <li class="list-group-item">Python - SQL Alchemy</li>
+                                </ul>
+                            </div>
+                            <!-- MongoDB List Content -->
+                            <div class="tab-pane fade" id="list-mongoDB-content" role="tabpanel" aria-labelledby="list-mongoDB">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 33%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Beginner</div>
+                                </div>
+                                <div class="text-center mt-2">
+                                    <p><em>University-Educated</em></p>
+                                </div>
+                                <p>Worked on assignments and course-content on using the terminal to insert databases and collections into mongoDB. Extensive experience with working with JSON-format data, interconverting between .json and .csv.</p>
+                            </div>                                
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Web Development
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <!-- Web Development Content -->
+
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="list-group" id="dataScience-list-tab" role="tablist">
+                            <a class="list-group-item list-group-item-action active" id="list-html" data-bs-toggle="list" href="#list-html-content" role="tab" aria-controls="list-html-content">HTML</a>
+                            <a class="list-group-item list-group-item-action" id="list-css" data-bs-toggle="list" href="#list-css-content" role="tab" aria-controls="list-css-content">CSS</a>
+                            <a class="list-group-item list-group-item-action" id="list-js" data-bs-toggle="list" href="#list-js-content" role="tab" aria-controls="list-js-content">JavaScript</a>
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="tab-content" id="nav-tabContent">
+                            <!-- HTML List Content -->
+                            <div class="tab-pane fade show active" id="list-html-content" role="tabpanel" aria-labelledby="list-html">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 66%;" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100">Intermediate</div>
+                                </div>
+                                <div class="text-center mt-2">
+                                    <p><em>Self-Taught</em></p>
+                                </div>
+                                <p>Creating interactive & responsive webpages!</p> 
+                                <ul class="list-group list-group-horizontal flex-fill">
+                                    <li class="list-group-item"><i class="bi bi-bootstrap"></i> Bootstrap5</li>
+                                </ul>
+                            </div>
+                            <!-- CSS List Content -->
+                            <div class="tab-pane fade" id="list-css-content" role="tabpanel" aria-labelledby="list-css">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Beginner-Intermediate</div>
+                                </div>
+                                <div class="text-center mt-2">
+                                    <p><em>Self-Taught</em></p>
+                                </div>
+                                <p>Learnt primarily through the freeCodeCamp curriculum. Knowledge & skills on box-model, grid-box and animations. Learnt SASS because of Bootstrap.</p>
+                                <ul class="list-group list-group-horizontal flex-fill">
+                                    <li class="list-group-item">SASS</li>
+                                </ul>
+                            </div>
+                            <!-- JavaScript List Content -->
+                            <div class="tab-pane fade" id="list-js-content" role="tabpanel" aria-labelledby="list-js">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Beginner-Intermediate</div>
+                                </div>
+                                <div class="text-center mt-2">
+                                    <p><em>Self-Taught</em></p>
+                                </div>
+                                <p>Solved some <a href="https://www.codewars.com/users/avls3">codewars</a> practice problems and knowledge on DOM. Currently learning React and TypeScript.</p>
+                                <!-- Not Confident in React and TypeScript Yet -->
+                            </div>                           
+                            </div>
+                        </div>
+                    </div>                   
+
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Software Development
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <!-- Software Development -->
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="list-group" id="dataScience-list-tab" role="tablist">
+                            <a class="list-group-item list-group-item-action active" id="list-gameDev" data-bs-toggle="list" href="#list-gameDev-content" role="tab" aria-controls="list-gameDev-content">Game Development</a>
+                            <a class="list-group-item list-group-item-action" id="list-java" data-bs-toggle="list" href="#list-java-content" role="tab" aria-controls="list-java-content">Java</a>
+                            <a class="list-group-item list-group-item-action" id="list-linux" data-bs-toggle="list" href="#list-linux-content" role="tab" aria-controls="list-linux-content">Linux</a>
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="tab-content" id="nav-tabContent">
+                            <!-- Game Development List Content -->
+                            <div class="tab-pane fade show active" id="list-gameDev-content" role="tabpanel" aria-labelledby="list-gameDev">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 33%;" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100">Beginner</div>
+                                </div>
+                                <div class="text-center mt-2">
+                                    <p><em>Self-Taught</em></p>
+                                </div>
+                                <p>Creating interactive games! I made a simple board-game recreation of Nine Men's Morris using <em>pygame</em>. I also know how to create physics simulations in python using <em>pymunk</em></p> 
+                                <ul class="list-group list-group-horizontal flex-fill">
+                                    <li class="list-group-item">PyGame</li>
+                                    <li class="list-group-item">Pymunk</li>
+                                </ul>
+                            </div>
+                            <!-- Java List Content -->
+                            <div class="tab-pane fade" id="list-java-content" role="tabpanel" aria-labelledby="list-java">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 33%;" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100">Beginner</div>
+                                </div>
+                                <div class="text-center mt-2">
+                                    <p><em>Self-Taught</em></p>
+                                </div>
+                                <p>Creating responsive applications using <em>JSwing</em> through Java</p>
+                                <ul class="list-group list-group-horizontal flex-fill">
+                                    <li class="list-group-item">JSwing</li>
+                                </ul>
+                            </div>
+                            <!-- Linux List Content -->
+                            <div class="tab-pane fade" id="list-linux-content" role="tabpanel" aria-labelledby="list-linux">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 33%;" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100">Beginner</div>
+                                </div>
+                                <div class="text-center mt-2">
+                                    <p><em>Self-Taught</em></p>
+                                </div>
+                                <p>I use PopOS...</p>
+                            </div>                           
+                            </div>
+                        </div>
+                    </div>                   
+                </div>
+              </div>
+            </div>
+          </div>
+
+    </section>
+
+    <!-- Contact Me -->
+    <section id="contact">
+        <div class="container-lg">
+            <h2>Contact Me!</h2>
+            <!-- Use of formsubmit.co -->
+            <form class="row g-3" action="https://formsubmit.co/sumaguearthur@outlook.com" method="POST">
+                <div class="col-md-6">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="firstName" required />
+                </div>
+                <div class="col-md-6">
+                    <label for="lastName" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="lastName" required />
+                </div>
+                <div class="col-md-8">
+                    <label for="emailInfo" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="emailInfo" required />
+                </div>
+                <div class="col-md-4">
+                    <label for="phoneNumber" class="form-label">Phone Number (optional)</label>
+                    <input type="text" class="form-control" id="phoneNumber" placeholder="+1 (XXX) XXX-XXXX"/>
+                </div>
+                <div class="col-md-12">
+                    <label for="comments" class="form-label">Message</label>
+                    <textarea id="comments" class="form-control" rows="3" required></textarea>
+                </div>
+                <div class="col-md-12">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- JS Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Tooltip Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        document.addEventListener('DOMContentLoaded', function () {
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl);
+            });
+        });
+    </script>
+    
+</body>
+</html>
